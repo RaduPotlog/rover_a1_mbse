@@ -7,7 +7,7 @@
         "--matlab-root=C:\\Program Files\\MATLAB\\R2026a",
         "--matlab-session-mode=auto",
         "--extension-file=C:\\Users\\potlo\\.matlab\\agentic-toolkits\\simulink\\tools\\tools.json",
-        "--initial-working-folder=\\\\wsl.localhost\\Ubuntu\\home\\rover-a1\\ros2_ws\\rover_a1\\mbse",
+        "--initial-working-folder=\\\\wsl.localhost\\Ubuntu\\home\\rover-a1\\ros2_ws\\rover_a1\\rover_mbse",
         "--matlab-display-mode=desktop",
         "--disable-telemetry=true",
         "--log-folder=C:\\Users\\potlo\\.matlab\\agentic-toolkits\\logs",
