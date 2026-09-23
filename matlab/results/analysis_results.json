@@ -1,0 +1,29 @@
+{
+  "endurance": {
+    "calc_h": 6,
+    "required_h": 6,
+    "margin_h": 0,
+    "sim_h": 5.9999999999999192,
+    "pass": true
+  },
+  "speed": {
+    "rim_mps": 1.8091658,
+    "commanded_mps": 1.2,
+    "margin_mps": 0.6091658,
+    "pass": true
+  },
+  "inspection": {
+    "navSpeed": true,
+    "controlRate": true,
+    "overTemp": true,
+    "watchdog": true,
+    "pass": true
+  },
+  "cmdTimeout": {
+    "config_pass": true
+  },
+  "meta": {
+    "matlab": "26.1.0.3346908 (R2026a) Update 5",
+    "date": "2026-09-23 14:13"
+  }
+}

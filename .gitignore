@@ -1,0 +1,7 @@
+# MATLAB / Simulink caches and backups
+*.asv
+*.autosave
+*.slxc
+slprj/
+# Python
+__pycache__/
