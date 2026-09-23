@@ -1,4 +1,4 @@
-%% build_architecture.m — GENERATED from SysML v2 (rover_a1) by
+%% build_architecture.m — GENERATED from SysML v2 (rover_mbse/rover_a1) by
 %% .claude/skills/system_composer_sysml/scripts/sysml_to_syscomp.py. Do not edit; re-generate.
 %% Builds <name>Arch.slx + <name>Interfaces.sldd + RoverProfile.xml + <name>Alloc.mldatx in ./arch
 function build_architecture()
@@ -295,6 +295,9 @@ setProperty(C{end}, "RoverProfile.RosTopic.topic", '"rover_battery/battery_statu
 setProperty(C{end}, "RoverProfile.RosTopic.msgType", '"rover_msgs/BatteryStatus"');
 setProperty(C{end}, "RoverProfile.RosTopic.qos", '"Reliable"');
 C{end+1} = connect(getPort(c_compute, "modbus"), getPort(c_safetyController, "modbus"));
+
+% --- layout: auto-arrange every composition (addComponent stacks children at one spot)
+for s = ["RoverA1Arch/drive_1", "RoverA1Arch/drive_2", "RoverA1Arch/drive_3", "RoverA1Arch/drive_4", "RoverA1Arch/platform", "RoverA1Arch/orchestrator", "RoverA1Arch/sensors", "RoverA1Arch/driveInterface", "RoverA1Arch"], Simulink.BlockDiagram.arrangeSystem(s); end
 
 % --- allocation (software services -> compute), same-model allocation set
 as = systemcomposer.allocation.createAllocationSet(aset, mdl, mdl); sc = as.Scenarios(1);
